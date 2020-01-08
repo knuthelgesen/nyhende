@@ -1,0 +1,8 @@
+<ng-container *ngIf="contentType">
+  <header>
+    <a routerLink="/" title="Plasmid frontpage"><h1>Plasmid</h1></a>
+  </header>
+  <app-menu [contentType]="contentType"></app-menu>
+  <main></main>
+  {{contentType}}
+</ng-container>

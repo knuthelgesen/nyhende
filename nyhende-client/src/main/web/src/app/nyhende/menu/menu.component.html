@@ -1,0 +1,5 @@
+<nav>
+  <ul *ngIf="menuItems">
+    <app-menu-item *ngFor="let menuItem of menuItems" [menuItem]="menuItem"></app-menu-item>
+  </ul>
+</nav>

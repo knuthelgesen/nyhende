@@ -1,0 +1,6 @@
+<li>
+  <a routerLink="{{menuItem.url}}" title="{{menuItem.name}}"><strong>{{menuItem.name}}</strong></a>
+  <ul>
+    <app-menu-item *ngFor="let childItem of menuItem.children" [menuItem]="childItem"></app-menu-item>
+  </ul>
+</li>
